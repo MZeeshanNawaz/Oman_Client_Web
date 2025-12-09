@@ -1,0 +1,572 @@
+:root {
+  --muted: #9b9b9b;
+  --footer-main: #25221f;
+  --footer-bottom: #1a1816;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Toast container */
+.toast-container .toast {
+  min-width: 260px;
+  max-width: 360px;
+}
+
+/* Top stripe */
+.top-stripe {
+  height: 6px;
+  background: linear-gradient(90deg, #3ea23e 0%, #e9c73a 40%, #f39c12 100%);
+}
+
+/* Contact strip */
+.contact-strip .logo-img {
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Navbar */
+.navbar {
+  z-index: 50;
+}
+
+/* =============== HERO SECTIONS =============== */
+/* Hero Home */
+.hero-home {
+  position: relative;
+  height: 500px;
+  background: url("https://www.summerhillcontainers.ie/wp-content/uploads/2025/07/Photo-1-47.jpg")
+    center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-home .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-home .hero-content h1,
+.hero-home .hero-content p {
+  color: #ffffff; 
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+/* All other page Hero sections */
+.hero-section {
+  position: relative;
+  height: 300px;
+  background: url("https://www.summerhillcontainers.ie/wp-content/uploads/2025/07/Photo-1-47.jpg")
+    center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero .breadcrumb {
+  opacity: 0.9;
+  letter-spacing: 0.12em;
+}
+/* Curvy Edge */
+.hero-edge {
+  position: absolute;
+  bottom: -1px; 
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-edge svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+/* =============== CARDS =============== */
+.crop-card {
+  border: none;
+  border-radius: 6px;
+  overflow: visible;
+  transition: transform 0.18s ease;
+}
+.crop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+.crop-image-wrap {
+  position: relative;
+  overflow: visible;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.crop-image-wrap img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Price pill */
+.price-pill {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -22px;
+  background: var(--primary-green);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  border: 4px solid #fff;
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(62, 162, 62, 0.18);
+}
+.price-pill::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 36px;
+  height: 10px;
+  background: #fff;
+  border-radius: 3px;
+  z-index: -1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Card body */
+.crop-card .card-body {
+  padding-top: 30px;
+  margin-top: 12px;
+}
+.card-title {
+  margin-bottom: 0;
+  margin-top: 6px;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+/* =============== SERVICES CARDS =============== */
+.tick {
+  color: #1e3a8a !important;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.service-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* =============== INTRO IMAGES =============== */
+.intro-images {
+  display: inline-block;
+}
+.intro-small-img {
+  width: 120px;
+  height: 120px;
+  bottom: -30px;
+  left: -40px;
+  object-fit: cover;
+}
+
+/* =============== FOOTER =============== */
+.site-footer {
+  font-family: 'Poppins', sans-serif;
+  color: #d0d0d0;
+}
+.footer-top {
+  background: var(--footer-main);
+  padding: 44px 0 36px;
+  color: #cfcfcf;
+}
+.footer-logo {
+  height: 44px;
+  object-fit: contain;
+}
+.footer-desc {
+  color: #bdbdbd;
+  margin-top: 10px;
+}
+.socials .social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: transparent;
+  color: #e8e8e8;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-right: 8px;
+  transition: all 0.15s ease;
+  font-size: 13px;
+}
+.socials .social-btn:hover {
+  background: rgba(255, 255, 255, 0.03);
+  transform: translateY(-3px);
+  color: #fff;
+}
+.footer-heading {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 4px;
+  background: var(--primary-green);
+  border-radius: 3px;
+}
+.footer-links a {
+  color: #bfbfbf;
+  display: block;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.footer-links a i {
+  color: #bfbfbf;
+  font-size: 10px;
+}
+.footer-blog-item .blog-title {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.18;
+}
+.footer-blog-item .blog-meta {
+  color: #bfbfbf;
+  margin-top: 6px;
+}
+.contact-list i {
+  color: #bfbfbf;
+  margin-right: 8px;
+}
+.subscribe-group {
+  width: 100%;
+  max-width: 260px;
+}
+.subscribe-group .form-control {
+  border-radius: 4px 0 0 4px;
+  border-color: rgba(255, 255, 255, 0.06);
+  background: #fff;
+  padding: 8px 10px;
+}
+.subscribe-btn {
+  border-radius: 0 4px 4px 0;
+  background: var(--primary-green);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bottom {
+  background: var(--footer-bottom);
+  padding: 16px 0;
+  color: #9a9a9a;
+}
+.footer-bottom a {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 991.98px) {
+  .subscribe-group {
+    max-width: 100%;
+  }
+  .footer-top {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  :root {
+    --hero-height: 220px;
+  }
+  .price-pill {
+    bottom: -16px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .price-pill::after {
+    width: 28px;
+    height: 8px;
+    bottom: -7px;
+  }
+  .crop-image-wrap img {
+    height: 180px;
+  }
+  .crop-card .card-body {
+    padding-top: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .hero {
+    height: 360px;
+  }
+  .crop-image-wrap img {
+    height: 240px;
+  }
+}
+
+/* ============================= */
+/* LOGIN PAGE STYLES             */
+/* ============================= */
+
+:root {
+  --green: #3ea23e;
+  --muted: #7a8a99;
+}
+
+/* wrapper */
+.login-wrapper {
+  background: #f8f9fa;
+}
+
+/* card */
+.login-card {
+  max-width: 880px;
+  width: 100%;
+  background: #fff;
+}
+
+/* left image */
+.login-image {
+  flex: 1;
+}
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* right form */
+.login-form {
+  flex: 1;
+  min-width: 320px;
+}
+
+.welcome-text {
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+.welcome-text span {
+  font-weight: 400;
+  color: #333;
+}
+
+/* tabs */
+.form-tabs button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #9b9b9b;
+  cursor: pointer;
+  position: relative;
+}
+.form-tabs button.active {
+  color: var(--green);
+}
+.form-tabs button.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--green);
+  margin-top: 2px;
+}
+
+.form-tabs a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #9b9b9b;
+  position: relative;
+  padding-bottom: 2px;
+}
+.form-tabs a.active {
+  color: var(--green);
+}
+.form-tabs a.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--green);
+  margin-top: 2px;
+} 
+
+/* inputs */
+.form-control {
+  border: none;
+  border-bottom: 2px solid #7a8a99;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: none;
+}
+
+/* password toggle */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* forgot link */
+.forgot-link {
+  font-size: 0.9rem;
+  color: #7a8a99;
+  text-decoration: none;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* button */
+.btn-login {
+  background: var(--green);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 0;
+}
+.btn-login:hover {
+  background: #348b34;
+}
+
+.btn-login,
+.btn-login:focus,
+.btn-login:active {
+  background: var(--green) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.btn-login:hover {
+  background: #348b34 !important;
+  color: #fff !important;
+}
+
+/* ============================= */
+/* REGISTER PAGE EXTENSIONS      */
+/* ============================= */
+.welcome-text {
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+.welcome-text span {
+  font-weight: 400;
+  color: #333;
+}
+
+/* ============================= */
+/* CONTACT PAGE STYLES           */
+/* ============================= */
+
+/* Info cards */
+.contact-card {
+  padding: 2rem;
+  color: #fff;
+  border-radius: 8px;
+  height: 100%;
+}
+.contact-card.about {
+  background: #3ea23e;
+}
+.contact-card.contact {
+  background: #f3c623;
+}
+.contact-card.address {
+  background: #e59e1b;
+}
+.contact-card h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Form */
+.contact-form-box {
+  background: #fdfdf6;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+.contact-form-box h6 {
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+/* =============================
+   Disease Detection Page Styles
+============================= */
+
+.disease-page .hero-section {
+  position: relative;
+  height: 350px;
+}
+
+.disease-page .hero-section .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  inset: 0;
+}
+
+.disease-page .upload-section {
+  background-color: #2f9e44; /* Agritech green */
+}
+
+.disease-page .preview-container img {
+  border: 2px solid #dee2e6;
+  background-color: #fff;
+}
+
+.disease-page .result-section {
+  background-color: #f8f9fa;
+}
+
+
+
+
+

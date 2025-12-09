@@ -1,0 +1,11 @@
+/* IntroSection.css */
+
+/* subtle bounce animation for the small floating image */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.bounce {
+  animation: bounce 0.9s ease-in-out infinite;
+}
