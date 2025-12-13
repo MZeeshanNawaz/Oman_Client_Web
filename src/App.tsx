@@ -12,7 +12,7 @@ import About from "./pages/About";
 import Marketplace from "./pages/Marketplace";
 import Contact from "./pages/Contact";
 import Services from "./pages/services";
-import Blog from "./pages/Blog";
+
 
 
 interface Toast {
@@ -83,7 +83,6 @@ function AppContent() {
         />
         <Route path="/contact" element={<Contact showToast={addToast} />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<Home />} />
       </Routes>
 
