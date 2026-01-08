@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 const TEAM: TeamMember[] = [
   {
     id: 1,
-    name: "Husnain Khalid",
-    role: "Project Engineer",
-    img: "https://i.postimg.cc/66mDh1wd/IMG-20250831-WA0029.jpg",
+    name: "Raja Saeed Iqbal",
+    role: "Chairman",
+    img: "https://i.postimg.cc/L8XHG8NV/chairman.jpg",
   },
   {
     id: 2,
-    name: "Zeeshan Nawaz",
-    role: "Frontend Developer / Systems Coordinator",
-    img: "https://i.postimg.cc/JhqqY9WP/IMG-20250825-WA0007.jpg",
+    name: "Amir Shoail Awan",
+    role: "Mechanical Supervisor",
+    img: "https://i.postimg.cc/GpgT6fFt/mechanical.jpg",
   },
   {
     id: 3,
-    name: "Okasha Javaid",
-    role: "UI/UX Designer",
-    img: "https://i.postimg.cc/Hxr6JBfz/IMG-20250831-WA0025-1.jpg",
+    name: "Team",
+    role: "Meet The Team",
+    img: "https://i.postimg.cc/LXSGKy2c/team.jpg",
   },
 ];
 

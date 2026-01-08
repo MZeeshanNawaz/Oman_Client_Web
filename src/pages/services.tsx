@@ -60,19 +60,19 @@ const Services = () => {
   const products = [
     {
       id: 1,
-      image: "https://i.postimg.cc/nrnXj4cy/cabin-4.jpg",
+      image: "https://i.postimg.cc/Hngvgk5V/durable.jpg",
       description:
         "Durable modular cabins built with insulated panels to ensure comfort and performance in harsh climates.",
     },
     {
       id: 2,
-      image: "https://i.postimg.cc/D0StcDZC/cabin-6.jpg",
+      image: "https://i.postimg.cc/sD29ZW3N/portable.jpg",
       description:
         "Portable cabin offices designed for efficient workspace setup, with modern layouts and reliable structures.",
     },
     {
       id: 3,
-      image: "https://i.postimg.cc/NFxpmk8H/cabin-7.jpg",
+      image: "https://i.postimg.cc/HnwKcyH9/flexible.jpg",
       description:
         "Flexible prefabricated rooms developed for quick installation and safe onsite use across various industries.",
     },

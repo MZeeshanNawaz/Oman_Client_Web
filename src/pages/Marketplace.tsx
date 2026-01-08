@@ -7,8 +7,8 @@ interface MarketplaceProps {
 }
 
 // JSONBin.io Config
-const BIN_ID = "692f3ce8d0ea881f400e7911"; // Replace with your BIN ID
-const API_KEY = "$2a$10$Ad6b4e2E966Az590iZqmUuaqG6ax1mHjpyzSOKDYBXY5FXZEMsJie"; // Replace with your API key
+const BIN_ID = "692f3ce8d0ea881f400e7911";
+const API_KEY = "$2a$10$Ad6b4e2E966Az590iZqmUuaqG6ax1mHjpyzSOKDYBXY5FXZEMsJie";
 const ADMIN_PASSWORD = "tariq@909";
 const NAVY = "#1e3a8a";
 
@@ -18,7 +18,6 @@ const Marketplace: React.FC<MarketplaceProps> = ({ showToast }) => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [newProduct, setNewProduct] = useState({ title: "", price: "", image: "" });
 
-  // Fetch products from JSONBin
   const loadProducts = async () => {
     try {
       const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
@@ -34,7 +33,6 @@ const Marketplace: React.FC<MarketplaceProps> = ({ showToast }) => {
     }
   };
 
-  // Save products to JSONBin
   const saveProducts = async (updatedProducts: Product[]) => {
     await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
       method: "PUT",
@@ -90,11 +88,9 @@ const Marketplace: React.FC<MarketplaceProps> = ({ showToast }) => {
     <div className="container mx-auto p-5">
       <h1 className="text-3xl font-bold mb-4">Our Products – Tariq Al Khoud LLC</h1>
 
-      {/* Product Grid */}
       <ProductGrid products={products} onDelete={isAdmin ? deleteProduct : undefined} />
       <br />
 
-      {/* Admin Login */}
       {!isAdmin && (
         <div className="mt-6 text-center">
           <button
@@ -107,7 +103,6 @@ const Marketplace: React.FC<MarketplaceProps> = ({ showToast }) => {
         </div>
       )}
 
-      {/* Add Product Form */}
       {isAdmin && (
         <div className="mt-10 border p-5 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Add Product</h2>
@@ -118,19 +113,32 @@ const Marketplace: React.FC<MarketplaceProps> = ({ showToast }) => {
             value={newProduct.title}
             onChange={(e) => setNewProduct({ ...newProduct, title: e.target.value })}
           /> &nbsp; &nbsp;
+
           <input
             className="border p-2 w-full mb-3"
             placeholder="Image URL"
             value={newProduct.image}
             onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
-          />&nbsp; &nbsp;
-          <button
-            className="px-5 py-2 rounded text-white"
-            style={{ backgroundColor: NAVY }}
-            onClick={addProduct}
-          >
-            Add Product
-          </button>
+          /> &nbsp; &nbsp;
+
+          {/* Buttons */}
+          <div className="flex gap-4 mt-2">
+            <button
+              className="px-5 py-2 rounded text-white"
+              style={{ backgroundColor: NAVY }}
+              onClick={addProduct}
+            >
+              Add Product
+            </button>
+
+            <button
+              className="px-5 py-2 rounded text-white"
+              style={{ backgroundColor: NAVY }}
+              onClick={() => window.open("https://postimages.org/", "_blank")}
+            >
+              Get Image URL
+            </button>
+          </div>
         </div>
       )}
     </div>

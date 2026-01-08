@@ -9,44 +9,44 @@ const ServicesSection: React.FC = () => {
     {
       id: 1,
       title: "Office Cabins",
-      image: "https://i.postimg.cc/nrnXj4cy/cabin-4.jpg",
+      image: "https://i.postimg.cc/N0s68rtq/office.jpg",
       description:
         "Modern, air-conditioned office cabins designed for site offices and temporary setups.",
     },
     {
       id: 2,
       title: "Labor Accommodation Cabins",
-      image: "https://i.postimg.cc/D0StcDZC/cabin-6.jpg",
+      image: "https://i.postimg.cc/KznmZ4KR/labor.jpg",
       description:
         "Durable and safe labor accommodation units ideal for on-site workers and staff housing.",
     },
     {
       id: 3,
       title: "Security Rooms",
-      image: "https://i.postimg.cc/NFxpmk8H/cabin-7.jpg",
+      image: "https://i.postimg.cc/qMZHH2mK/security.jpg",
       description:
         "Compact, comfortable security rooms built for continuous outdoor use and surveillance needs.",
     },
     {
       id: 4,
       title: "Toilet & Shower Units",
-      image: "https://i.postimg.cc/L54zKKf0/cabin-8.jpg",
+      image: "https://i.postimg.cc/WbVhJcjC/toilet.jpg",
       description:
         "Portable washroom and shower solutions for worksites, events, and remote areas.",
     },
     {
       id: 5,
       title: "Storage & Workshop Cabins",
-      image: "https://i.postimg.cc/MH4XshYQ/cabin-9.jpg",
+      image: "https://i.postimg.cc/MGnyrJnB/storage.jpg",
       description:
         "Customized storage and small workshop units with reinforced flooring and safety design.",
     },
     {
       id: 6,
-      title: "Custom Design Cabins",
-      image: "https://i.postimg.cc/3WMwT20k/cabin-1.jpg",
+      title: "Custom Design Mosque Cabins",
+      image: "https://i.postimg.cc/sxTxr18G/mosque.jpg",
       description:
-        "Tailored cabins to match your specifications — from executive offices to site clinics.",
+        "Purpose-built mosque cabins designed for prayer, serenity, and community use with Islamic values.",
     },
   ];
 
